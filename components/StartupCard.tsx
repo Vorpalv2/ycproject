@@ -31,7 +31,7 @@ const StartupCard = ({card}:{card:cardInterface}) => {
                     </Link>
                 </div>
                 <Link href={`/user/${card.author?._id}`}>
-                    <Image src={"https://placehold.co/48X48"} alt={'placeholder'} width={48} height={48} className={'rounded-full'}/>
+                    <Image src={card.author.image!} alt={'placeholder'} width={48} height={48} className={'rounded-full'}/>
                 </Link>
             </div>
             <Link href={`/startup/${card._id}`}>
