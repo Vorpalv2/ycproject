@@ -4,7 +4,6 @@ import StartupCard, {cardInterface} from "@/components/StartupCard";
 
 import {Startups_Query} from "@/sanity/lib/queries";
 import {sanityFetch, SanityLive} from "@/sanity/lib/live";
-import {auth} from "@/auth";
 
 const Home = async({searchParams}:{searchParams:Promise<{query?: string}>}) => {
     const query = (await searchParams).query
